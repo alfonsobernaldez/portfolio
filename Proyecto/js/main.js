@@ -186,3 +186,10 @@ function modoNoche(){
         localStorage.setItem('selected-icon', getCurrentIcon())
     })
 }
+
+
+/*-----------------------------------------------------FORMULARIO DE CONTACTO EMAIL ------------------------------------------*/
+var frmvalidator = new Validator("contact__form"); 
+frmvalidator.addValidation("nombre__contact","req","Por favor escriba un nombre");
+frmvalidator.addValidation("email__contact","req","Porfavor escriba un email de contacto");
+frmvalidator.addValidation("email__contact","email__contact", "Porfavor introduzca una direccion válida"); 

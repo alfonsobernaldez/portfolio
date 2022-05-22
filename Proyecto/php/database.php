@@ -7,7 +7,7 @@
 	$con = mysqli_connect($server, $user, $pass, $db) or die ("Error al conectar con la base de datos");
 	
 	function login($con, $correo, $contra){
-		$result = mysqli_query($con, "select * from Usuario where correo='".$correo."' and contra='".$contra."'");
+		$result = mysqli_query($con, "select * from Usuario where correo='".$correo."' and contra='".$contra."';");
 		if(mysqli_num_rows($result)==0){
 			return 0; //Si no existe el usuario devuelvo 0
 		}
@@ -36,16 +36,7 @@
 		mysqli_query($con, "insert into usuario values('".$correo."','".$nombre."','".$contra."','".$empresa."');");
 	}
 	
-	function obtenerUsuario($con, $correo, $contra){
-		$resultado = mysqli_query($con, "select * from Usuario where correo='".$correo."', contra='".$contra."';");
-		if(mysqli_num_rows($resultado)==0){
-			return 0; //Si no existe el usuario devuelvo 0
-		}
-		else{
-			$usuario = mysqli_fetch_array($resultado);
-			return $usuario;//Si existe el usuario devuelvo un array con sus datos
-		}
-	}
+
 	
 	
 	

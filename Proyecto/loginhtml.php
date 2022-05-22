@@ -1,6 +1,10 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start();?>
 
 <head>
     <meta charset='utf-8'>
@@ -26,7 +30,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Alfonso</a>
+            <a href="index.php" class="nav__logo">Alfonso</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -54,11 +58,7 @@
                         </a>
                     </li>
 
-                    <li class="nav__item">
-                        <a href="index.php#contacto" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contact Me
-                        </a>
-                    </li>
+                    
 
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div>
-                        <input type='submit' value='Entrar' class="button button--flex">
+                        <input type='submit' value='Entrar' class="button button--flex" style="width: 200px;">
                     </div>
             </form>
 

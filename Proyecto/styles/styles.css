@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 27;
+    --hue-color: 200;
     /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
@@ -286,7 +286,10 @@ img {
 }
 
 /*==================== HOME ====================*/
+.columns{
+    justify-content: space-evenly;
 
+}
 .home__container {
     gap: 1rem;
 }
@@ -298,7 +301,7 @@ img {
 }
 
 .home__social {
-    display: grid;
+    display: flex;
     grid-template-columns: max-content;
     row-gap: 1rem;
 }
@@ -341,34 +344,7 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.home__scroll {
-    display: none;
-}
 
-.home__scroll-button {
-    color: var(--first-color);
-    transition: .3s;
-}
-
-.home__scroll-button:hover {
-    transform: translateY(.25rem);
-}
-
-
-.home__scroll-mouse {
-    font-size: 2rem;
-}
-
-.home__scroll-name {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
-}
-
-.home__scroll-arrow {
-    font-size: 1.25rem;
-}
 
 
 /*==================== BUTTONS ====================*/
@@ -592,6 +568,14 @@ img {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
+    border: none;
+    background-color: var(--first-color-lighter);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    ;
 }
 
 .qualification__button:hover {
@@ -1066,8 +1050,8 @@ img {
     }
 
     .home__img {
-        order: 1;
-        justify-self: center;
+        order: 2;
+        justify-self: right;
     }
 
     .about__container,

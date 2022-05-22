@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +31,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Alfonso</a>
+            <a href="index.php" class="nav__logo">Alfonso</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -53,11 +59,7 @@
                         </a>
                     </li>
 
-                    <li class="nav__item">
-                        <a href="index.php#contacto" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contact Me
-                        </a>
-                    </li>
+                    
 
                 </ul>
                 <i class="uil uil-times nav__close" id="nav-close"></i>
@@ -79,8 +81,8 @@
 
     <!-----------------------------------------------FORMULARIO DE CONTACTO LOGIN----------------------------------------------->
     <section class="contact section" id="contact">
-        <h2 class="section__title">Login Zone</h2>
-        <span class="section__subtitle">Welcome, please login to acces to the private zone</span>
+        <h2 class="section__title">Registration Form</h2>
+        <span class="section__subtitle">Please provide an email, password, name and bussiness name to contact.</span>
         <div class="contact__container container grid">
 
             <form action="php/crear_usuario.php" name="crear" method="post" class="contact__form grid">
